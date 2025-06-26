@@ -1,6 +1,6 @@
 # Data Warehouse and Analytics Project
 
-Welcome to the **Data Warehouse and Analytics Project** repository! From the development of a data warehouse to the generation of actionable insights, this comprehensive data warehousing and analytics solution highlights industry best practices in data engineering and analytics. 
+Welcome to the **Data Warehouse and Analytics Project** repository! From the development of a data warehouse to the generation of actionable insights, this comprehensive data warehousing and analytics solution showcase industry best practices in data engineering and analytics. 
 
 ## Project Requirements
 
@@ -27,7 +27,7 @@ Develop SQL-based analytics to deliver detailed insights into:
 - **Product Performance**
 - **Sales Trends**
 
-These insights empower stakeholders with key business metrics and enable strategic decision-making.
+These insights empower key stakeholders with essential business metrics and enable strategic decision-making.
 
 ## License
 
