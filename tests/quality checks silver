@@ -19,7 +19,28 @@ Usage Notes:
 -- ======================================================================
 -- Checking 'silver.crm_cust_info'
 -- ======================================================================
+-- Check for nulls or duplicates in the primary key                              /* Probably phrase differently. */
 
+SELECT
+cst_id,
+COUNT (*)
+FROM silver.crm_cust_info
+GROUP BY cst_id
+HAVING COUNT(*) > 1  OR cst_id IS NULL
+
+-- Check for unwanted spaces                                                     /* Probably phrase differently. */
+
+SELECT cst_firstname
+FROM silver.crm_cust_info
+WHERE cst_firstname != TRIM(cst_firstname)
+
+SELECT cst_lastname
+FROM silver.crm_cust_info
+WHERE cst_lastname != TRIM(cst_lastname)
+
+--Data Standardization & Consistency
+SELECT DISTINCT cst_gndr
+FROM silver.crm_cust_info
 
 -- ======================================================================
 -- Checking 'silver.crm_prd_info'
@@ -35,6 +56,7 @@ Usage Notes:
 -- Checking 'silver.erp_cust_az12'                                       /* This one should be good */
 -- ======================================================================
 -- Data Standardization & Consistency
+
 SELECT DISTINCT
   gen
 FROM silver.erp_cust_az12;
