@@ -222,7 +222,7 @@ BEGIN
 			CAT,
 			SUBCAT,
 			MAINTENANCE
-		FROM silver.erp_px_cat_g1v2;
+		FROM bronze.erp_px_cat_g1v2;
 		SET @end_time = GETDATE();
 		PRINT '>> Load Duration: '+ CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
 		PRINT '>>-------------------------------------';
