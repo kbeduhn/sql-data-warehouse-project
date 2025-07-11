@@ -16,18 +16,36 @@ The Gold Layer is the business-layer level data representation, structured to su
 | last_name | NVARCHAR(50) | The customer's last name or family name. |
 | country | NVARCHAR(50) | The country of residence for the customer (e.g., 'Australia')  |
 | marital_status | NVARCHAR(50) | The marital status of the customer (e.g., 'Married', 'Single').
-| gender | | |
-| birth_date | | |
-| create_date | | |
+| gender | NVARCHAR(50) | The gender of the customer (e.g., 'Male', 'Female,' 'n/a'). |
+| birth_date | DATE | The date of birth of the customer, formatted as YYYY-MM-DD (e.g., 1971-10-06). |
+| create_date | DATE | Teh date and time when the customer record was created in the system. |
 
-2. **gold.fact_sales**
+2. **gold.dim_products**
+   **Columns:**
+   
+| Column Name | Data Type | Description|
+|---------------|----------|-----------|
+| product_key | INT | Surrogate key uniquely each product record in the product dimension table. |
+| product_id | INT | A unique identifier assigned to the product for internal tracking and referencing. |
+| product_number | NVARCHAR(50) | A structured alphanumeric code representing the product, often used for categorization or inventory. |
+| product_name | NVARCHAR(50)  | Descriptive name of the product, including key details such as type, color, and size.|
+| category_id | NVARCHAR(50) | A unique identifier for the product's category, linking to its high-level classification. | 
+| category | NVARCHAR(50) | The broader classification of the product (e.g., bikes, components) to group related items. |
+| subcategory | NVARCHAR(50)  | A more detailed classification of the product within the category, such as the product type. |
+| maintenance | NVARCHAR(50)  | Indicates whether the product requires maintenance (e.g., 'Yes', 'No"). |
+| product_cost | INT | The cost or base price of the product, measured in monetary units. |
+| product_line |  NVARCHAR(50)  | The specific product line or series to which the product belongs (e.g., 'Road', 'Mountain', 'Touring', 'Other Sales', 'n/a') |
+| product_start_date | DATE | |
+
+
+3. **gold.fact_sales**
 **Columns:**
 
 | Column Name | Data Type | Description|
 |---------------|----------|-----------|
-| order_number | | |
-| product_key | | |
-| customer_key | | |
+| order_number | NVARCHAR(50) | Aunique alphanumeric identifier for each sales (e.g., 'SO54496'). |
+| product_key | INT | Surrogate key linking the order to the product dimension table. |
+| customer_key | INT | Surrogate key linking the order to the customer dimension table. |
 | order_date | | |
 | shipping_date | | |
 | due_date | | |
@@ -35,22 +53,6 @@ The Gold Layer is the business-layer level data representation, structured to su
 | quantity | | |
 | price | | |
 
-3. **gold.dim_products**
-   **Columns:**
-   
-| Column Name | Data Type | Description|
-|---------------|----------|-----------|
-| product_key | | |
-| product_id | | |
-| product_number | | |
-| product_name | | |
-| category_id | | |
-| category | | |
-| subcategory | | |
-| maintenance | | |
-| cost | | |
-| product_line | | |
-| start_date | | |
 
 
 
