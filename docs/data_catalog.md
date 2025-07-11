@@ -37,6 +37,7 @@ The Gold Layer is the business-layer level data representation, structured to su
 
 3. **gold.dim_products**
    **Columns:**
+   
 | Column Name | Data Type | Description|
 |---------------|----------|-----------|
 | product_key | | |
