@@ -36,7 +36,7 @@
      
 #### Glossary of Category Patterns
 | Pattern | Meaning | Example(s)|
----------------------------------
+|---------|---------|-----------|
 | dim | Dimension table | dim_customer, dim_product|
 | fact | Fact table | fact_sales |
 
