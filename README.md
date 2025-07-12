@@ -77,9 +77,6 @@ data-warehouse-project/
 |-- .gitignore                             # Files and directories to be ignored by Git
 |-- requirements.tx                        # Dependencies and requirements for the project
 
--
-
-
 ## License
 
 This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/) You are free to use, modify, and share this project with proper attribution. 
