@@ -32,4 +32,35 @@
     - <entity>: Descriptive name of the table, aligned wiht the business domain (e.g., customers, products, sales).
     - Examples;
         - dim_customers -> Dimension table for customer data.
-        - fact_sales ._ Fact table containing sales transactions.
+        - fact_sales -> Fact table containing sales transactions.
+     
+#### Glossary of Category Patterns
+| Pattern | Meaning | Example(s)|
+---------------------------------
+| dim | Dimension table | dim_customer, dim_product|
+| fact | Fact table | fact_sales |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
