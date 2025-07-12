@@ -39,6 +39,8 @@
 |---------|---------|-----------|
 | dim | Dimension table | dim_customer, dim_product|
 | fact | Fact table | fact_sales |
+| agg_ | Aggregated table | agg_customers, agg_sales_monthly |
+
 
 
 
