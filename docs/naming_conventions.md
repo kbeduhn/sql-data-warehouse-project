@@ -9,7 +9,6 @@
 ## Table Naming Conventions
 
 ### Bronze Rules
-
 - All names must start with the source system name, and table names must match their original names without renaming.
 - <sourcsystem>_<entity>
     - <sourcesystem>: Name of the source system (e.g., crm, erp).
@@ -17,7 +16,6 @@
     - Example: crm_customer_info -> Customer information from the CRM system.
 
 ### Silver Rules
-
 - All names must start with the source system name, and table names must match their original names without renaming.
 - <sourcsystem>_<entity>
     - <sourcesystem>: Name of the source system (e.g., crm, erp).
@@ -25,8 +23,7 @@
     - Example: crm_customer_info -> Customer information from the CRM system.
 
 ### Gold Rules
-
-- all names must use meaningful, business-aligned names for tables, starting with the category prefix.
+- All names must use meaningful, business-aligned names for tables, starting with the category prefix.
 - <category>_<entity>
     - <category>: Describes the role of the table, such as dim (dimension) or fact (fact table).
     - <entity>: Descriptive name of the table, aligned wiht the business domain (e.g., customers, products, sales).
